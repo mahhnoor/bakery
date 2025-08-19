@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahnoor's Bakery</title>
+  <style>
+    /* Reset some default margins */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #fff8f8;
+      color: #3b3b3b;
+    }
+
+    /* Navbar */
+    header {
+      background: linear-gradient(90deg, #d16ba5, #c777b9, #ba83ca, #aa8fd8);
+      color: #fff;
+      padding: 15px 20px;
+      text-align: center;
+    }
+    header h2 {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    header nav a:hover {
+      color: #7cffb2; /* pastel green hover */
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1542826438-ef9e2115d51a') center/cover no-repeat;
+      padding: 80px 20px;
+      text-align: center;
+      color: white;
+      background-attachment: fixed;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    }
+    .hero p {
+      font-size: 20px;
+      background: rgba(0,0,0,0.4);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+
+    /* Content Section */
+    .content {
+      display: flex;
+      justify-content: space-around;
+      padding: 40px 20px;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      width: 30%;
+      min-width: 250px;
+      margin: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    .card h3 {
+      margin-bottom: 10px;
+      color: #a64ca6;
+    }
+    .card button {
+      background: #4caf50;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin-top: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .card button:hover {
+      background: #3e8e41;
+    }
+
+    /* Footer */
+    footer {
+      background: #3b3b3b;
+      color: #fff;
+      text-align: center;
+      padding: 15px 20px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h2>Mahnoor's Bakery</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Freshly Baked Happiness</h1>
+    <p>Delicious cakes, pastries, and breads made with love.</p>
+  </section>
+
+  <!-- Content Section -->
+  <section class="content">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff" alt="Cupcakes">
+      <h3>Cupcakes</h3>
+      <p>Fluffy, frosted, and full of joy – perfect for any occasion.</p>
+      <button>Order Now</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Bread">
+      <h3>Fresh Bread</h3>
+      <p>Golden crusts and soft insides – straight from our ovens.</p>
+      <button>Order Now</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1613145993488-0e64d8de32b1" alt="Cake">
+      <h3>Custom Cakes</h3>
+      <p>Celebrate life’s sweetest moments with our custom cakes.</p>
+      <button>Order Now</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sweet Treats Bakery | Baked Fresh Daily</p>
+  </footer>
+
+</body>
+</html>
